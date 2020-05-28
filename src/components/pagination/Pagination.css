@@ -1,0 +1,20 @@
+.pagination {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 10;
+}
+
+
+.pag-button {
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  margin-top: 5px;
+}
+
+.active-dot {
+  background: #f07822;
+}

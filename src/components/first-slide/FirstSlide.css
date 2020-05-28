@@ -1,0 +1,87 @@
+.image {
+  height: 100vh;
+}
+
+.pulse {
+  top: 34.9%;
+  left: 55.5%;
+  width: 38px;
+  height: 38px;
+
+}
+
+.pulse2 {
+  top: 56.1%;
+  left: 27.1%;
+  width: 18px;
+  height: 18px;
+
+}
+
+.animation {
+   margin: 0 auto;
+   position: absolute;
+   display: block;
+   border-radius: 50%;
+   cursor: pointer;
+   border: 2px solid #f07822;
+   opacity: 0;
+   animation: pulse 3s linear infinite;
+   transform: scale(1);
+}
+
+ @-webkit-keyframes pulse {
+   0% {
+     opacity: 0;
+     transform: scale(.3);
+   }
+
+   15% {
+     opacity: .3;
+   }
+
+   50% {
+     opacity: .8;
+   }
+
+   100% {
+     opacity: 0;
+     transform: scale(1.5);
+   }
+ }
+
+ @keyframes pulse {
+   0% {
+     opacity: 0;
+     transform: scale(.3);
+   }
+
+   15% {
+     opacity: .3;
+   }
+
+   50% {
+     opacity: .8;
+   }
+
+   100% {
+     opacity: 0;
+     transform: scale(1.5);
+   }
+ }
+.wrap-button {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.wrap-text {
+ color:white;
+}
+ #button-down {
+   background: url('../../assets/button.svg') no-repeat center;
+   width: 50px;
+   height: 50px;
+   margin: 0 auto;
+ }
