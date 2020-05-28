@@ -26,7 +26,6 @@ export default class Carousel extends Component {
         value
       })
     }
-
   render () {
     let { value } = this.state
     return (
@@ -42,7 +41,7 @@ export default class Carousel extends Component {
          })}
        </div>
        <div className = 'wrap-range'>
-       <input type = "range" className="range" min="-200" max="0" value="-100" onChange={this.inputChange} value={value}></input>
+          <input type="range" className="range" min="-200" max="0" value="0" step="100" onChange={this.inputChange} value={value}></input>
        <div className='wrap-years'>
          <span>1988</span>
          <span>2009</span>

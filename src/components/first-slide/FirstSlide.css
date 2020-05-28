@@ -71,13 +71,14 @@
  }
 .wrap-button {
   position: absolute;
-  bottom: -15px;
+  bottom: -25px;
   left: 50%;
   transform:translate(-50%, -50%);
 }
 
 .wrap-text {
  color:white;
+ font-size: 20px;
 }
  #button-down {
    background: url('../../assets/button.svg') no-repeat center;
