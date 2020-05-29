@@ -46,7 +46,10 @@
   -webkit-appearance: none;
   width: 100%;
   height: 10px; 
-  background-color: rgba(209, 234, 255, 0.5);  
+  background: linear-gradient(90deg, rgba(209, 234, 255, 0.5) 100%, rgb(209, 234, 255) 100%);
+  outline: none;
+  -webkit-transition: 0.2s;
+  border-radius: 12px;
 }
 
 .range::-webkit-slider-thumb{

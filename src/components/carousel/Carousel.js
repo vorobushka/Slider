@@ -26,6 +26,15 @@ export default class Carousel extends Component {
         value
       })
     }
+    componentDidMount() {
+      const slider = document.querySelector('.range')
+      slider.addEventListener('change', () => {
+        let x = (slider.value / 2) * -1
+        let color = `linear-gradient(260deg, rgb(209, 234, 255) ${x}%, rgba(209, 234, 255, 0.5) ${x}%)`
+        slider.style.background = color
+      })
+     }
+   
   render () {
     let { value } = this.state
     return (
