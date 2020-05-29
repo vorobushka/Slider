@@ -20,6 +20,7 @@ componentDidMount() {
 
 componentWillUnmount() {
   window.removeEventListener('scroll', this.handleScroll);
+  document.getElementById('button-down').removeEventListener('click', this.downScroll);
 }
 
 componentDidCatch() {
